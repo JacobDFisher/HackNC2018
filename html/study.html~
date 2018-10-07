@@ -368,15 +368,17 @@
 <body class="document-body">
   <gwd-pagedeck class="gwd-page-container" id="pagedeck">
     <gwd-page id="page1" class="gwd-page-wrapper page1-content gwd-lightbox gwd-page-1ulb" data-gwd-width="100%" data-gwd-height="3400px">
-      <div class="gwd-page-content page1-content gwd-div-1rdp"><iframe src="/BannerOrange.html"></iframe><span class="gwd-span-wo3x gwd-span-1ktb">Today's Study Session:</span>
+      <div class="gwd-page-content page1-content gwd-div-1rdp"><span class="gwd-span-m1av gwd-span-1ucw">Banner</span><span class="gwd-span-wo3x gwd-span-1ktb">Today's Study Session:</span>
         <div class="gwd-span-trqy">
-          <form class="gwd-form-1ncc", action="/cgi-bin/partnerMain.py", target="Match">
+          <form class="gwd-form-1ncc">
+            <!-- Fuckery Make this an active form -->
             <span class="gwd-span-7c0j"> <br><br>
        
              </span>
             Where do you plan to study?<br>
             
             <select>
+              <!--fucker-->
               <option value="EBI">EBI</option>
               <option value="EBII">EBII</option>
               <option value="EBIII">EBIII</option>
@@ -394,7 +396,11 @@
             
             <input type="Submit"><br>
             
-            <iframe name="Match">
+            <iframe name="Match1" src="/cgi-bin/y.py">
+            </iframe>
+            <iframe name="Match2" src="/cgi-bin/y.py">
+            </iframe>
+            <iframe name="Match3" src="/cgi-bin/y.py">
             </iframe>
           </form>
         </div>
