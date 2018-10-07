@@ -18,8 +18,8 @@ class Student:
     
     def log_classes(self):
         i = input("How many classes: ")
-        for _ in (0, i):
-            self.class_log.append(input("Enter class in form: ABC-123 001: "))
+        for x in (0, i):
+            x.append(input("Enter class in form: ABC-123 001: "))
     
     def update_noise(self, noise):
         self.avg_noise = (self.avg_noise + noise) / len(self.peer_history)

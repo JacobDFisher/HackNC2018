@@ -9,23 +9,19 @@ class EventCalendar:
     def __init__(self):
         self.all_events = []
     
-    def add_session(self, name, id, section, time_in, time_out):
-        self.session_database.append(Session(name, id, section, time_in, time_out))
-    
-    # Clears expired events, runs every 30 min
-    def is_expired(self):
-        for x in self.all_events:
-            if x.time_out < 
-        
-    # Consolidates Events by Location
-    
-    # Consolidates Events by Subject 
-    
-    # Searches by location
-    
+    def add_session(self, student, course, location):
+        self.all_events.append({'student' : student, 'location' : location, 'subject' : course})
+                    
     # Searches by Subject
-    
-    # Searches by Section
-    
-    
+    def search(self, fields = {}):
+        results = []
+        for x in self.all_events:
+            for y in fields:
+                if type(fields[y])==str:
+                    if x[y] == fields[y]:
+                        results.append(x[y])
+                elif hasattr(fields[y], '__iter__'):
+                    if x[y] in fields[y]:
+                        results.append(x[y])
+        return results
         
