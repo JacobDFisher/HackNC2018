@@ -5,16 +5,17 @@ Created on Oct 6, 2018
 '''
 class Student:
     
-    def __init__(self, unityId, password):
+    def __init__(self, unityId, password, name, prob, foc, soc, noise):
         self.unity_id = unityId
         self.password = password
         self.peer_history = []
-        self.avg_noise = 3
-        self.avg_communication = 3
-        self.avg_listener = 3
-        
+        self.avg_problemSolver = prob
+        self.avg_noise = noise
+        self.avg_focus = foc
+        self.avg_social = soc
+        self.name = name
         self.class_log = []
-        self.log_classes()
+        #self.log_classes()
     
     def log_classes(self):
         i = input("How many classes: ")

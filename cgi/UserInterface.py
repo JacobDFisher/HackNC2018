@@ -3,7 +3,7 @@ Created on Oct 6, 2018
 
 @author: lfeid
 '''
-from program import Student
+import Student
 
 class UserInterface:
     
