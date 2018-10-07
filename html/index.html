@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<title>Welcome, valued customer</title>
+<form action = "/cgi-bin/pythoncgitest.py" method = "post" target="test_iframe">
+	Name: <input type = "text" name = "name" /><br />
+	Address:<input type = "text" name = "addr" />
+	<input type = "submit" value = "Submit" />
+	</form>
+<iframe name="test_iframe" src="/cgi-bin/pythoncgitest.py"></iframe>
