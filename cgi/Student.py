@@ -35,4 +35,7 @@ class Student:
         self.update_noise(noise)
         self.update_communication(communication)
         self.update_listener(listener)
+
+    def compare(self, stud):
+        return 12.5*(8-abs(self.avg_problemSolver-stud.avg_problemSolver)-abs(self.avg_noise-stud.avg_noise)-abs(self.avg_focus-stud.avg_focus)-abs(self.avg_social-stud.avg_social))
         

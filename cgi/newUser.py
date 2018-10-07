@@ -18,12 +18,18 @@ def main():
         print('Invalid email')
         return
     stud = Student.Student(form['.edu Address'].value.split('@')[0], form['Password'].value, form['FirstName'].value+' '+form['LastName'].value, int(form['ProblemSolver'].value), int(form['Focus'].value), int(form['Social'].value), int(form['Noise'].value))
-    print('Set-Cookie:unityID = {}'.format(form['.edu Address'].value.split('@')[0]))
+    print('Set-Cookie:unityId = {}'.format(stud.unity_id))
+    print('Set-Cookie:password = {}'.format(stud.password))
+    print('Set-Cookie:prob = {}'.format(stud.avg_problemSolver))
+    print('Set-Cookie:noise = {}'.format(stud.avg_noise))
+    print('Set-Cookie:foc = {}'.format(stud.avg_focus))
+    print('Set-Cookie:soc = {}'.format(stud.avg_social))
+    print('Set-Cookie:name = {}'.format(stud.name))
     print("Content-Type: text/html")
     print()
     print('<!DOCTYPE html>')
     print('<html><head>')
-    print('<meta http-equiv="Refresh" content="0; url=/index.html">')
+    print('<meta http-equiv="Refresh" content="0; url=/study.html">')
     print('</head></html>')
     return
 
