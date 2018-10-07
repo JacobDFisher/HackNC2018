@@ -24,4 +24,4 @@ class EventCalendar:
                     if x[y] in fields[y]:
                         results.append(x[y])
         return results
-        
+    

@@ -34,3 +34,4 @@ class Student:
         self.update_noise(noise)
         self.update_communication(communication)
         self.update_listener(listener)
+        
